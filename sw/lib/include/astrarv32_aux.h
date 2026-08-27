@@ -1,0 +1,52 @@
+// ================================================================================ //
+// The ASTRARV32 RISC-V Processor - https://github.com/stnolting/astrarv32              //
+// Copyright (c) ASTRARV32 contributors.                                              //
+// Copyright (c) 2020 - 2026 Stephan Nolting. All rights reserved.                  //
+// Licensed under the BSD-3-Clause license, see LICENSE for details.                //
+// SPDX-License-Identifier: BSD-3-Clause                                            //
+// ================================================================================ //
+
+/**
+ * @file astrarv32_aux.h
+ * @brief General auxiliary functions header file.
+ */
+
+#ifndef ASTRARV32_AUX_H
+#define ASTRARV32_AUX_H
+
+#include <astrarv32.h>
+#include <stdint.h>
+
+/**********************************************************************//**
+ * @name Date and time struct
+ **************************************************************************/
+typedef struct {
+  uint16_t year;    /**< current year (absolute) */
+  uint8_t  month;   /**< 1..12 */
+  uint8_t  day;     /**< 1..31 */
+  uint8_t  weekday; /**< 1..7 starting with Monday */
+  uint8_t  hours;   /**< 0..23 */
+  uint8_t  minutes; /**< 0..59 */
+  uint8_t  seconds; /**< 0..59 */
+} date_t;
+
+
+/**********************************************************************//**
+ * @name AUX prototypes
+ **************************************************************************/
+/**@{*/
+void     astrarv32_aux_delay_ms(uint32_t clock_hz, uint32_t time_ms);
+uint64_t astrarv32_aux_date2unixtime(date_t* date);
+void     astrarv32_aux_unixtime2date(uint64_t unixtime, date_t* date);
+uint64_t astrarv32_aux_hexstr2uint64(char *buffer, unsigned int length);
+uint32_t astrarv32_aux_xorshift32(void);
+void     astrarv32_aux_itoa(char *buffer, uint32_t num, uint32_t base);
+void     astrarv32_aux_print_hw_config(void);
+void     astrarv32_aux_print_hw_version(uint32_t impid);
+void     astrarv32_aux_print_about(void);
+void     astrarv32_aux_print_logo(void);
+void     astrarv32_aux_print_license(void);
+/**@}*/
+
+
+#endif // ASTRARV32_AUX_H

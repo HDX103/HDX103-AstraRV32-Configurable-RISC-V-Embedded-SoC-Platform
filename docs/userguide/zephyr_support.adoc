@@ -1,0 +1,13 @@
+<<<
+:sectnums:
+== Zephyr RTOS Support
+
+The ASTRARV32 processor is supported by upstream Zephyr RTOS: https://docs.zephyrproject.org/latest/boards/others/astrarv32/doc/index.html
+
+[IMPORTANT]
+The absolute path to the ASTRARV32 executable image generator binary (`.../astrarv32/sw/image_gen`) has to be added to the `PATH` variable
+so the Zephyr build system can generate executables and memory-initialization images.
+
+[NOTE]
+Zephyr OS port provided by GitHub user https://github.com/henrikbrixandersen[henrikbrixandersen]
+(see https://github.com/stnolting/astrarv32/discussions/172).

@@ -1,0 +1,22 @@
+= The ASTRARV32 RISC-V Processor - User Guide
+include::../attrs.adoc[]
+:title: [User Guide] The ASTRARV32 RISC-V Processor
+:icons: font
+:imagesdir: ../img
+:toc: left
+:title-logo-image: astrarv32_logo_riscv.png[pdfwidth=6.25in,align=center]
+:favicon: ../img/icon.png
+
+image::astrarv32_logo_riscv.png[align=center,link="https://github.com/stnolting/astrarv32"]
+
+[.text-center]
+https://github.com/stnolting/astrarv32[image:https://img.shields.io/badge/GitHub-stnolting%2Fastrarv32-ffbd00?style=flat&logo=github&[title='homepage']]
+https://github.com/stnolting/astrarv32/releases/download/nightly_release/ASTRARV32-nightly.pdf[image:https://img.shields.io/badge/Data%20Sheet-PDF-ffbd00?longCache=true&style=flat&logo=asciidoctor[title='Data Sheet (pdf)']]
+https://stnolting.github.io/astrarv32[image:https://img.shields.io/badge/-HTML-ffbd00?longCache=true&style=flat[title='Data Sheet (html)']]
+https://github.com/stnolting/astrarv32/releases/download/nightly_release/ASTRARV32_UserGuide-nightly.pdf[image:https://img.shields.io/badge/User%20Guide-PDF-ffbd00?longCache=true&style=flat&logo=asciidoctor[title='User Guide (pdf)']]
+https://stnolting.github.io/astrarv32/sw/files.html[image:https://img.shields.io/badge/SW_API-HTML-ffbd00?longCache=true&style=flat&logo=Doxygen[title='doxygen']] +
+https://github.com/stnolting/astrarv32/blob/main/LICENSE[image:https://img.shields.io/github/license/stnolting/astrarv32?longCache=true&style=flat&logo=bsd&[title='license']]
+https://github.com/stnolting/astrarv32/releases[image:https://img.shields.io/github/v/release/stnolting/astrarv32?longCache=true&style=flat&logo=GitHub[title='release']]
+https://github.com/stnolting/astrarv32/releases[image:https://img.shields.io/github/commits-since/stnolting/astrarv32/latest?longCache=true&style=flat&logo=GitHub[title='release-commits']]
+
+include::content.adoc[]
